@@ -28,12 +28,28 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird eagle = new Bird(false, true, "sharp", 3);  //I can also add Animal properties inside parameters, I didn't do this on this exercise
+            eagle.IsAquatic = false;
+            eagle.IsNocturnal = false;
+            eagle.NumOfLegs = 2;
+            eagle.SkinType = "feathers";
+            eagle.EatsMeat = true;
+
+            eagle.BirdSheet("Eagle");
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Bird class
              *  
              * Creatively display the class member values 
              */
+            Reptile cobra = new Reptile("varies", true, false, true);
+            cobra.IsAquatic = false;
+            cobra.IsNocturnal = false;
+            cobra.NumOfLegs = 0;
+            cobra.SkinType = "scales";
+            cobra.EatsMeat = true;
+
+            cobra.ReptileSheet("Cobra");
         }
     }
 }
